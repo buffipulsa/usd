@@ -3,6 +3,10 @@
 from typing import Any
 
 
+class Path:
+    def AppendPath(self, newSuffix: "Path | str") -> "Path": ...
+
+
 class Layer:
     identifier: str
     realPath: str

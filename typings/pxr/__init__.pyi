@@ -2,5 +2,6 @@
 
 from . import Sdf as Sdf
 from . import Usd as Usd
+from . import UsdGeom as UsdGeom
 
-__all__ = ["Sdf", "Usd"]
+__all__ = ["Sdf", "Usd", "UsdGeom"]
