@@ -1,0 +1,26 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.analysis.stubPath": "${workspaceFolder}/typings",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}",
+    "${workspaceFolder}/.venv/Lib/site-packages"
+  ],
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.packageIndexDepths": [
+    {
+      "name": "pxr",
+      "depth": 2,
+      "includeAllSymbols": true
+    }
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/*.pyo": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/*.pyo": true
+  }
+}
