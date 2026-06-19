@@ -1,3 +1,15 @@
+"""List the property names available on a prim.
+
+This module creates ``out/attributes_ex1.usda``, defines a sphere and translated
+cube below ``/World``, and prints the cube's property names before saving the
+stage.
+
+Notes
+-----
+``Usd.Prim.GetPropertyNames`` returns the names of both attributes and
+relationships composed on the prim. It does not return the property objects.
+"""
+
 from pxr import Usd, UsdGeom, Gf
 
 import src.tools.path_tools as path_tools

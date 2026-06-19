@@ -1,3 +1,15 @@
+"""Read and author values on a prim's attributes.
+
+This module creates ``out/attributes_ex3.usda``, defines a sphere and translated
+cube below ``/World``, doubles the cube's size and extent values, and authors a
+green display color before saving and printing the stage.
+
+Notes
+-----
+Calling ``Usd.Attribute.Set`` authors a value in the current edit target. The
+schema accessors identify the expected USD attributes without string lookups.
+"""
+
 from pxr import Usd, UsdGeom, Gf
 
 import src.tools.path_tools as path_tools

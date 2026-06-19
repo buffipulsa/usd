@@ -1,3 +1,15 @@
+"""Inspect a prim's attributes and read selected values.
+
+This module creates ``out/attributes_ex2.usda``, defines a sphere and translated
+cube below ``/World``, prints every attribute on the cube, and reads its size,
+display color, and extent values.
+
+Notes
+-----
+``Usd.Prim.GetAttributes`` returns attribute objects, while schema accessors
+such as ``GetSizeAttr`` provide direct access to known attributes.
+"""
+
 from pxr import Usd, UsdGeom, Gf
 
 import src.tools.path_tools as path_tools
